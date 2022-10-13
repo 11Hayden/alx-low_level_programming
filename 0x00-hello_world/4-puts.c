@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
- *
- * main - to use put to display a sentence
- *
- * Return - Return 0 if successful
+ * main - Prints programming is like building a multilingual puzzle
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
-/*to display Programming is like building a multilingual puzzle */
+	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
 }
