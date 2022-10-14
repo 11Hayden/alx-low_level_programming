@@ -5,13 +5,11 @@
 */
 int main(void)
 {
-	int a, b, c;
+	int a, b;
 
-	c = '0';
-
-	for (a = '0'; a <= '9'; a++)
+		for (a = '0'; a < '9'; a++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		for (b = a + 1; b <= '9'; b++)
 		{
 			if (a != b)
 			{
@@ -32,7 +30,6 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		c++;
 	}
 	putchar('\n');
 return (0);
