@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_last - to print the last digit of a given input
+* print_last_digit - to print the last digit of a given input
 * @n:  is the variable
 * Return: n if n>=0 else -n
 */
