@@ -12,15 +12,15 @@ int main(void)
 	{
 		if (n % 15 == 0)
 		{
-			printf("FIZZ BUZZ ");
+			printf("Fizz Buzz ");
 		}
 		else if (n % 3 == 0)
 		{
-			printf("FIZZ ");
+			printf("Fizz ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("BUZZ ");
+			printf("Buzz ");
 		}
 		else
 		{
