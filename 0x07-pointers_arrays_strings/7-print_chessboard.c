@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _chessboard - to print a chessboard
+* print_chessboard - to print a chessboard
 * @a : integer
 */
-void print(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int i1, i2;
 
