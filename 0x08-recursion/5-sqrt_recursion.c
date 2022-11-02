@@ -21,6 +21,7 @@ int root_power(int n, int p)
 	return (0 + root_power(n, p + 1));
 }
 /**
+* _sqrt_recursion - to get square root
 * @n: integer
 * Return: square root
 */
