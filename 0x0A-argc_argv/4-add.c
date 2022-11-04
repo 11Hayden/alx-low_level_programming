@@ -20,12 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= 'a' && *argv[i] <= 'z')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else if (*argv[i] < 0)
+			if (*argv[i] <= 47 || *argv[i] >= 58)
 			{
 				printf("Error\n");
 				return (1);
