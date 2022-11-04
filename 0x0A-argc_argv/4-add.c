@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum = 0, i, plus = 0;
+	char *ptr;
 
 	if (argc < 2)
 	{
@@ -19,9 +20,10 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!(*argv[i] <= 47 || *argv[i] >= 58))
+		plus = strtol(argv[i], &ptr, 10);
+		if (*ptr == '\0')
 		{
-			sum += atoi(argv[i]);
+			sum += plus;
 		}
 		else
 		{
@@ -29,6 +31,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf("%d\n", sum);
-	return (0);
+printf("%d\n", sum);
+return (0);
 }
