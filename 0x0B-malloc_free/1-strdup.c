@@ -43,7 +43,7 @@ return (dest);
 char *_strdup(char *str)
 {
 	char *s;
-	size_t size = _strlen(str) + 1;
+	unsigned int size = _strlen(str) + 1;
 
 	if (str == 0)
 	{
