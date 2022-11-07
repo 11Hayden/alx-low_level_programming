@@ -17,18 +17,21 @@ int _strlen(char *s)
 }
 
 /**
-* _memcpy -  copies n bytes from memory area src to memory area dest
+* _strcpy - copies from memory area src to memory area dest
 * @dest: destination string
 * @src: source string
-* @n: integer
 * Return: returns a pointer to s
 */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strcpy(char *dest, char *src)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; i < n; i++)
-	dest[i] = src[i];
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
 return (dest);
 }
 
@@ -51,6 +54,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-_memcpy(s, str, size);
+_strcpy(s, str);
 return (s);
 }
