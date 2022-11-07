@@ -50,7 +50,6 @@ unsigned int size = _strlen(str) + 1;
 		return (NULL);
 	}
 	sa = (char *) malloc(size * sizeof(char));
-	
 	if (sa == 0)
 	{
 		return (NULL);
