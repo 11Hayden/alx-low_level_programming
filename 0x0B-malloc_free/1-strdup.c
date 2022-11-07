@@ -42,18 +42,19 @@ return (dest);
 */
 char *_strdup(char *str)
 {
-	char *s;
-	unsigned int size = _strlen(str) + 1;
+char *sa;
+unsigned int size = _strlen(str) + 1;
 
 	if (str == 0)
 	{
 		return (NULL);
 	}
-	s = (char *) malloc(size * sizeof(char));
-	if (s == 0)
+	sa = (char *) malloc(size * sizeof(char));
+	
+	if (sa == 0)
 	{
 		return (NULL);
 	}
-_strcpy(s, str);
-return (s);
+_strcpy(sa, str);
+return (sa);
 }
