@@ -47,9 +47,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	s = (char *) malloc(size * sizeof(char));
-	if (s)
+	if (s == 0)
 	{
-		_memcpy(s, str, size);
+		return (NULL);
 	}
+_memcpy(s, str, size);
 return (s);
 }
