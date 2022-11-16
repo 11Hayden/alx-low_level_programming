@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* stuct op - Struct op
+* struct op - Struct op
 *
 * @op: The operator
 * @f: The function associated
