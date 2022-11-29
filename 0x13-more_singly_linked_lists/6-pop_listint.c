@@ -9,7 +9,7 @@ int pop_listint(listint_t **head)
 {
 	int headpoint;
 	listint_t *newh, *carry;
-	
+
 	if (*head == NULL)
 		return (0);
 	carry = *head;
