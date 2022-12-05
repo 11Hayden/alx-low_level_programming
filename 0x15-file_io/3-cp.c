@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* ferror - a function that checks if a file can be opened.
+* feerror - a function that checks if a file can be opened.
 * @file_from: source file
 * @file_to: destination file
 * @argv: argument vector
@@ -10,13 +10,13 @@ void feerror(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
-		dprintf (STDERR_FILENO, "Error: cant't read from file %s\n",
+		dprintf(STDERR_FILENO, "Error: Cant't read from file %s\n",
 				argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprintf (STDERR_FILENO, "Error: cant't read from file %s\n",
+		dprintf(STDERR_FILENO, "Error: Cant't read from file %s\n",
 				argv[2]);
 		exit(99);
 	}
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf (STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
